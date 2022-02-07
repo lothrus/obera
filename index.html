@@ -4,7 +4,13 @@
 
 <p id="demo">aaaa</p>
 <script>
-	if((Math.floor(Math.random() * 100)) < 5){document.getElementById("demo").innerHTML = "Falcon Battleaxe"}else{document.getElementById("demo").innerHTML = "as bless"}
+
+	if((Math.floor(Math.random() * 1000)) < 50){
+		r=["Falcon Battleaxe","Falcon Longsword","Falcon Mace","Falcon Bow","Falcon Circlet","Falcon Coif","Falcon Rod","Falcon Wand","Falcon Greaves","Falcon Plate","Falcon Shield"];
+			document.getElementById("demo").innerHTML = '@$(user) vai dropar '+(r[Math.floor(Math.random() * r.length)])+' no Oberon.'
+	}else{
+		r=["as bless","a vida","Almanac"];
+		document.getElementById("demo").innerHTML = '@$(user) vai dropar '+(r[Math.floor(Math.random() * r.length)])+' no Oberon.'}
 </script>
 
 </body>
